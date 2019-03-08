@@ -1,0 +1,8 @@
+if [ -z "$1" ]
+   then
+	echo "ENTRE SEU NOME COMO ARGUMENTO, SEM ACENTOS, SEM ESPACOS. EXEMPLO:"
+	echo '$ ./zipaParaEntregar ZeJoaoSilva'
+   	exit
+fi
+
+zip -r ${1}.zip src/
